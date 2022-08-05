@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "key": "frontend.user_data_ea8543830b7c4ac5a11efd3a2cc04d13",
+    "data": {
+        "language": {
+            "language": "pt-BR",
+            "number_format": "language",
+            "time_format": "language"
+        },
+        "core": {
+            "showAdvanced": true
+        }
+    }
+}

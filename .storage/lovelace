@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "no-header": {
+        "card-mod-theme": "no-header",
+        "card-mod-root": "app-toolbar {\n  display: none;\n}\n"
+      },
+      "title": "Casa",
+      "views": [
+        {
+          "path": "default_view",
+          "title": "",
+          "icon": "mdi:home-city",
+          "badges": [],
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "type": "picture",
+                      "image": "/local/nath_image.png"
+                    },
+                    {
+                      "type": "picture-elements",
+                      "elements": [
+                        {
+                          "entity": "device_tracker.telefone_matheus",
+                          "style": {
+                            "color": "white",
+                            "font-size": "1.4em",
+                            "left": "25%",
+                            "top": "90%"
+                          },
+                          "type": "state-label"
+                        }
+                      ],
+                      "image": "/local/math_image.png"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "color": "rgb(102, 140, 255)",
+                  "color_type": "label-card",
+                  "name": "Luzes",
+                  "styles": {
+                    "card": [
+                      {
+                        "height": "20px"
+                      },
+                      {
+                        "font-size": "14px"
+                      }
+                    ]
+                  },
+                  "type": "custom:button-card"
+                },
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "entity": "light.led_armario",
+                      "name": "Armário",
+                      "size": "30%",
+                      "color": "auto",
+                      "hold_action": {
+                        "action": "more-info"
+                      },
+                      "styles": {
+                        "card": [
+                          {
+                            "height": "100px"
+                          }
+                        ],
+                        "name": [
+                          {
+                            "color": "var(--button-card-light-color)"
+                          },
+                          {
+                            "font-weight": 500
+                          },
+                          {
+                            "font-size": "12px"
+                          }
+                        ]
+                      },
+                      "state": [
+                        {
+                          "styles": {
+                            "card": [
+                              {
+                                "-webkit-box-shadow": "0px 0px 9px 3px var(--button-card-light-color)"
+                              },
+                              {
+                                "box-shadow": "0px 0px 2px 1px var(--button-card-light-color)"
+                              }
+                            ],
+                            "value": "on"
+                          }
+                        }
+                      ],
+                      "type": "custom:button-card"
+                    },
+                    {
+                      "entity": "light.led_mesa",
+                      "name": "Mesa",
+                      "size": "30%",
+                      "color": "auto",
+                      "hold_action": {
+                        "action": "more-info"
+                      },
+                      "styles": {
+                        "card": [
+                          {
+                            "height": "100px"
+                          }
+                        ],
+                        "name": [
+                          {
+                            "color": "var(--button-card-light-color)"
+                          },
+                          {
+                            "font-weight": 500
+                          },
+                          {
+                            "font-size": "12px"
+                          }
+                        ]
+                      },
+                      "state": [
+                        {
+                          "styles": {
+                            "card": [
+                              {
+                                "-webkit-box-shadow": "0px 0px 9px 3px var(--button-card-light-color)"
+                              },
+                              {
+                                "box-shadow": "0px 0px 2px 1px var(--button-card-light-color)"
+                              }
+                            ],
+                            "value": "on"
+                          }
+                        }
+                      ],
+                      "type": "custom:button-card"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "weather-forecast",
+              "entity": "weather.casa",
+              "show_forecast": true
+            }
+          ]
+        },
+        {
+          "title": "",
+          "path": "",
+          "icon": "mdi:remote-tv",
+          "badges": [],
+          "cards": [
+            {
+              "type": "thermostat",
+              "entity": "climate.ar_condicionado"
+            },
+            {
+              "type": "picture-elements",
+              "image": "/local/controle.png",
+              "elements": [
+                {
+                  "entity": "script.ligar_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "11%",
+                    "left": "43.5%"
+                  },
+                  "type": "state-icon"
+                },
+                {
+                  "entity": "script.abaixar_vol_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "47.5%",
+                    "left": "46.5%"
+                  },
+                  "type": "state-icon"
+                },
+                {
+                  "entity": "script.aumentar_vol_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "42%",
+                    "left": "46.5%"
+                  },
+                  "type": "state-icon"
+                },
+                {
+                  "entity": "script.seta_esq_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "27%",
+                    "left": "47%"
+                  },
+                  "type": "state-icon"
+                },
+                {
+                  "entity": "script.seta_dir_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "27%",
+                    "left": "59%"
+                  },
+                  "type": "state-icon"
+                },
+                {
+                  "entity": "script.seta_cima_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "22.4%",
+                    "left": "52.65%"
+                  },
+                  "type": "state-icon"
+                },
+                {
+                  "entity": "script.seta_baixo_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "32%",
+                    "left": "52.75%"
+                  },
+                  "type": "state-icon"
+                },
+                {
+                  "entity": "script.ok_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "27%",
+                    "left": "53.4%"
+                  },
+                  "type": "state-icon"
+                },
+                {
+                  "entity": "script.input_tv",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "style": {
+                    "top": "15.5%",
+                    "left": "49.5%"
+                  },
+                  "type": "state-icon"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.matheus",
+        "state": "unknown",
+        "attributes": {
+          "editable": false,
+          "id": "matheus",
+          "user_id": "ea8543830b7c4ac5a11efd3a2cc04d13",
+          "friendly_name": "Matheus"
+        },
+        "last_changed": "2022-08-05T20:59:19.373354+00:00",
+        "last_updated": "2022-08-05T20:59:33.148453+00:00",
+        "context": {
+          "id": "01G9QWWRWWY1N05ZJ373MB6QPW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_supervisor_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "2022.07.0",
+          "in_progress": false,
+          "latest_version": "2022.07.0",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/supervisor/releases/tag/2022.07.0",
+          "skipped_version": null,
+          "title": "Home Assistant Supervisor",
+          "entity_picture": "https://brands.home-assistant.io/hassio/icon.png",
+          "friendly_name": "Home Assistant Supervisor Update",
+          "supported_features": 1
+        },
+        "last_changed": "2022-08-05T21:04:30.992024+00:00",
+        "last_updated": "2022-08-05T21:04:30.992024+00:00",
+        "context": {
+          "id": "01G9QX5VRGXGBG2FGC39Z2K4VV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_core_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2022.8.1",
+          "in_progress": false,
+          "latest_version": "2022.8.1",
+          "release_summary": null,
+          "release_url": "https://www.home-assistant.io/latest-release-notes/",
+          "skipped_version": null,
+          "title": "Home Assistant Core",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Core Update",
+          "supported_features": 11
+        },
+        "last_changed": "2022-08-05T21:04:30.992840+00:00",
+        "last_updated": "2022-08-05T21:04:30.992840+00:00",
+        "context": {
+          "id": "01G9QX5VRGXXADYFNM4GFP7PXS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.ssh_web_terminal_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "12.0.0",
+          "in_progress": false,
+          "latest_version": "12.0.0",
+          "release_summary": "## What’s changed\n\n## 🚨 Breaking changes\n\n- Remove deprecated `hassio` command @felipecrs (#423)\n\n## ⬆️ Dependency updates\n\n- ⬆️ Upgrades add-on base image to 12.2.2 @frenck (#427)\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "SSH & Web Terminal",
+          "entity_picture": "/api/hassio/addons/a0d7b954_ssh/icon",
+          "friendly_name": "SSH & Web Terminal Update",
+          "supported_features": 25
+        },
+        "last_changed": "2022-08-05T21:04:30.994644+00:00",
+        "last_updated": "2022-08-05T21:04:30.994644+00:00",
+        "context": {
+          "id": "01G9QX5VRJKJ46DBR2TK1KSMJH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_operating_system_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "8.4",
+          "in_progress": false,
+          "latest_version": "8.4",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/operating-system/releases/tag/8.4",
+          "skipped_version": null,
+          "title": "Home Assistant Operating System",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Operating System Update",
+          "supported_features": 3
+        },
+        "last_changed": "2022-08-05T21:04:30.996398+00:00",
+        "last_updated": "2022-08-05T21:04:30.996398+00:00",
+        "context": {
+          "id": "01G9QX5VRM4F2A7PSY23Q4N7M7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.turn_off_the_lights_when_i_leave_home",
+        "state": "on",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "id": "1626717008773",
+          "friendly_name": "Notifica quando não tem ninguém de casa"
+        },
+        "last_changed": "2022-08-05T20:59:25.279547+00:00",
+        "last_updated": "2022-08-05T20:59:25.279547+00:00",
+        "context": {
+          "id": "01G9QWWH6ZAS95PDRA6T4BGPT1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "remote.rm3_remote",
+        "state": "on",
+        "attributes": {
+          "friendly_name": "rm3 Remote",
+          "supported_features": 3
+        },
+        "last_changed": "2022-08-05T20:59:25.953021+00:00",
+        "last_updated": "2022-08-05T20:59:25.953021+00:00",
+        "context": {
+          "id": "01G9QWWHW1KZQM5T96Q66B2APN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.ligar_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2022-08-05T21:01:43.516805+00:00",
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:power",
+          "friendly_name": "ligar_tv"
+        },
+        "last_changed": "2022-08-05T21:01:43.554334+00:00",
+        "last_updated": "2022-08-05T21:01:43.554334+00:00",
+        "context": {
+          "id": "01G9QX0R6TDHFJDBPTZC7Q3DRA",
+          "parent_id": null,
+          "user_id": "ea8543830b7c4ac5a11efd3a2cc04d13"
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.abaixar_vol_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:volume-minus",
+          "friendly_name": "abaixar_vol_tv"
+        },
+        "last_changed": "2022-08-05T20:59:26.750785+00:00",
+        "last_updated": "2022-08-05T20:59:26.750785+00:00",
+        "context": {
+          "id": "01G9QWWJMY0HJM0G2TSFMTD426",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.aumentar_vol_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:volume-plus",
+          "friendly_name": "aumentar_vol_tv"
+        },
+        "last_changed": "2022-08-05T20:59:26.751007+00:00",
+        "last_updated": "2022-08-05T20:59:26.751007+00:00",
+        "context": {
+          "id": "01G9QWWJMZ913VN8KA5DVRNJ4T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.seta_esq_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:arrow-left",
+          "friendly_name": "seta_esq_tv"
+        },
+        "last_changed": "2022-08-05T20:59:26.751216+00:00",
+        "last_updated": "2022-08-05T20:59:26.751216+00:00",
+        "context": {
+          "id": "01G9QWWJMZ2QWA7NGMM293YEW3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.seta_dir_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:arrow-right",
+          "friendly_name": "seta_dir_tv"
+        },
+        "last_changed": "2022-08-05T20:59:26.751419+00:00",
+        "last_updated": "2022-08-05T20:59:26.751419+00:00",
+        "context": {
+          "id": "01G9QWWJMZG7T71TMJA2T5KSDY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.seta_cima_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:arrow-up",
+          "friendly_name": "seta_cima_tv"
+        },
+        "last_changed": "2022-08-05T20:59:26.751617+00:00",
+        "last_updated": "2022-08-05T20:59:26.751617+00:00",
+        "context": {
+          "id": "01G9QWWJMZP4T6AKYJ29302A29",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.seta_baixo_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:arrow-down",
+          "friendly_name": "seta_baixo_tv"
+        },
+        "last_changed": "2022-08-05T20:59:26.751814+00:00",
+        "last_updated": "2022-08-05T20:59:26.751814+00:00",
+        "context": {
+          "id": "01G9QWWJMZRJ2SBB2FYS67JXY3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.ok_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:hand-okay",
+          "friendly_name": "ok_tv"
+        },
+        "last_changed": "2022-08-05T20:59:26.752009+00:00",
+        "last_updated": "2022-08-05T20:59:26.752009+00:00",
+        "context": {
+          "id": "01G9QWWJN0BA127K1S0NSEMZ2X",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.input_tv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:circle",
+          "friendly_name": "input_tv"
+        },
+        "last_changed": "2022-08-05T20:59:26.752201+00:00",
+        "last_updated": "2022-08-05T20:59:26.752201+00:00",
+        "context": {
+          "id": "01G9QWWJN0XZJFTERQEKN9M082",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_matheus_battery_level",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-80",
+          "friendly_name": "Telefone matheus Battery Level"
+        },
+        "last_changed": "2022-08-05T20:59:27.001009+00:00",
+        "last_updated": "2022-08-05T20:59:27.001009+00:00",
+        "context": {
+          "id": "01G9QWWJWSWJE100FDMTRQ10GW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_matheus_battery_state",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "Telefone matheus Battery State"
+        },
+        "last_changed": "2022-08-05T20:59:27.001419+00:00",
+        "last_updated": "2022-08-05T20:59:27.001419+00:00",
+        "context": {
+          "id": "01G9QWWJWSPE5HH9DSJNZ4CZ0T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_matheus_charger_type",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "Telefone matheus Charger Type"
+        },
+        "last_changed": "2022-08-05T20:59:27.001769+00:00",
+        "last_updated": "2022-08-05T20:59:27.001769+00:00",
+        "context": {
+          "id": "01G9QWWJWSG3C9MESXVAWMT3W9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_matheus_battery_health",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "Telefone matheus Battery Health"
+        },
+        "last_changed": "2022-08-05T20:59:27.002043+00:00",
+        "last_updated": "2022-08-05T20:59:27.002043+00:00",
+        "context": {
+          "id": "01G9QWWJWTMW2AK0TQK46GXCB1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_matheus_battery_temperature",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "Telefone matheus Battery Temperature"
+        },
+        "last_changed": "2022-08-05T20:59:27.002308+00:00",
+        "last_updated": "2022-08-05T20:59:27.002308+00:00",
+        "context": {
+          "id": "01G9QWWJWTCP6JKQ5E9AD04KN3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.telefone_matheus_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "Telefone matheus Is Charging"
+        },
+        "last_changed": "2022-08-05T20:59:27.002596+00:00",
+        "last_updated": "2022-08-05T20:59:27.002596+00:00",
+        "context": {
+          "id": "01G9QWWJWTXTWFXACTQXZB4BQN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.telefone_matheus",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "Telefone matheus"
+        },
+        "last_changed": "2022-08-05T20:59:27.002955+00:00",
+        "last_updated": "2022-08-05T20:59:27.002955+00:00",
+        "context": {
+          "id": "01G9QWWJWTKHNNYE6VR9QZ1HJR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_da_nathalia_battery_level",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-40",
+          "friendly_name": "Telefone da nathalia Battery Level"
+        },
+        "last_changed": "2022-08-05T20:59:27.003380+00:00",
+        "last_updated": "2022-08-05T20:59:27.003380+00:00",
+        "context": {
+          "id": "01G9QWWJWVMYKCMNNZZ1BGGAC7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_da_nathalia_battery_state",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "Telefone da nathalia Battery State"
+        },
+        "last_changed": "2022-08-05T20:59:27.003642+00:00",
+        "last_updated": "2022-08-05T20:59:27.003642+00:00",
+        "context": {
+          "id": "01G9QWWJWVYCDYZ2X5HV0459XK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_da_nathalia_charger_type",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "Telefone da nathalia Charger Type"
+        },
+        "last_changed": "2022-08-05T20:59:27.003895+00:00",
+        "last_updated": "2022-08-05T20:59:27.003895+00:00",
+        "context": {
+          "id": "01G9QWWJWVCDS05C47KXBYPB67",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_da_nathalia_battery_health",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "Telefone da nathalia Battery Health"
+        },
+        "last_changed": "2022-08-05T20:59:27.004147+00:00",
+        "last_updated": "2022-08-05T20:59:27.004147+00:00",
+        "context": {
+          "id": "01G9QWWJWWC0WNA7PDCEEHQA5M",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.telefone_da_nathalia_battery_temperature",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "Telefone da nathalia Battery Temperature"
+        },
+        "last_changed": "2022-08-05T20:59:27.004399+00:00",
+        "last_updated": "2022-08-05T20:59:27.004399+00:00",
+        "context": {
+          "id": "01G9QWWJWWZ61W0EZXQT8JQXKZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.telefone_da_nathalia_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "Telefone da nathalia Is Charging"
+        },
+        "last_changed": "2022-08-05T20:59:27.004655+00:00",
+        "last_updated": "2022-08-05T20:59:27.004655+00:00",
+        "context": {
+          "id": "01G9QWWJWWEW8DK56N9D7R747J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.telefone_da_nathalia",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "Telefone da nathalia"
+        },
+        "last_changed": "2022-08-05T20:59:27.004968+00:00",
+        "last_updated": "2022-08-05T20:59:27.004968+00:00",
+        "context": {
+          "id": "01G9QWWJWWMJ2MJ882P27GYMH3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.ar_condicionado",
+        "state": "off",
+        "attributes": {
+          "hvac_modes": [
+            "off",
+            "heat",
+            "cool",
+            "fan_only",
+            "dry"
+          ],
+          "min_temp": 18.0,
+          "max_temp": 32.0,
+          "target_temp_step": 1.0,
+          "fan_modes": [
+            "low",
+            "mid",
+            "high",
+            "auto"
+          ],
+          "current_temperature": null,
+          "temperature": 18.0,
+          "fan_mode": "low",
+          "friendly_name": "Ar condicionado",
+          "supported_features": 9
+        },
+        "last_changed": "2022-08-05T21:01:32.187174+00:00",
+        "last_updated": "2022-08-05T21:01:32.187174+00:00",
+        "context": {
+          "id": "01G9QX0D4RA1T5KP9HWJHTV4Z6",
+          "parent_id": null,
+          "user_id": "ea8543830b7c4ac5a11efd3a2cc04d13"
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.studio_code_server_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "5.2.0",
+          "in_progress": false,
+          "latest_version": "5.2.0",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- Bump yamllint from 1.26.3 to 1.27.1 in /vscode @dependabot (#473)\n- ⬆️ Upgrades add-on base image to 6.1.0 @frenck (#477)\n- ⬆️ Upgrades code-server to 4.5.1 @frenck (#478)\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Studio Code Server",
+          "entity_picture": "/api/hassio/addons/a0d7b954_vscode/icon",
+          "friendly_name": "Studio Code Server Update",
+          "supported_features": 25
+        },
+        "last_changed": "2022-08-05T21:04:30.995201+00:00",
+        "last_updated": "2022-08-05T21:04:30.995201+00:00",
+        "context": {
+          "id": "01G9QX5VRK4BQBETGZFEANE0XP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.node_red_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "13.3.1",
+          "in_progress": false,
+          "latest_version": "13.3.1",
+          "release_summary": null,
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Node-RED",
+          "entity_picture": "/api/hassio/addons/a0d7b954_nodered/icon",
+          "friendly_name": "Node-RED Update",
+          "supported_features": 25
+        },
+        "last_changed": "2022-08-05T21:04:30.995615+00:00",
+        "last_updated": "2022-08-05T21:04:30.995615+00:00",
+        "context": {
+          "id": "01G9QX5VRKF34DP82KVAV883DK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.led_mesa_restart",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "Led Mesa Restart"
+        },
+        "last_changed": "2022-08-05T21:11:49.253885+00:00",
+        "last_updated": "2022-08-05T21:11:49.253885+00:00",
+        "context": {
+          "id": "01G9QXK7R561JFBWDHGSFGT3G0",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.led_armario_restart",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "Led Armario Restart"
+        },
+        "last_changed": "2022-08-05T21:12:33.890281+00:00",
+        "last_updated": "2022-08-05T21:12:33.890281+00:00",
+        "context": {
+          "id": "01G9QXMKB255ZAVV86QRZHQ058",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:14:33.149309+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.terminal_ssh_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "9.6.0",
+          "in_progress": false,
+          "latest_version": "9.6.0",
+          "release_summary": null,
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Terminal & SSH",
+          "entity_picture": "/api/hassio/addons/core_ssh/icon",
+          "friendly_name": "Terminal & SSH Update",
+          "supported_features": 25
+        },
+        "last_changed": "2022-08-05T20:41:10.305938+00:00",
+        "last_updated": "2022-08-05T20:41:10.305938+00:00",
+        "context": {
+          "id": "01G9QVV3X109XP1W1X3CADY0DG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T20:43:51.813912+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.controller_rgb_9964bc_restart",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "Controller RGB 9964BC Restart"
+        },
+        "last_changed": "2022-08-05T21:07:06.824621+00:00",
+        "last_updated": "2022-08-05T21:07:06.824621+00:00",
+        "context": {
+          "id": "01G9QXAKY88TB2Y5CMPWAY8PPT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:11:49.243239+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.controller_rgb_9a2e82_restart",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "Controller RGB 9A2E82 Restart"
+        },
+        "last_changed": "2022-08-05T21:07:26.935790+00:00",
+        "last_updated": "2022-08-05T21:07:26.935790+00:00",
+        "context": {
+          "id": "01G9QXB7JQFKJY3X05H1HGYE7S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-08-05T21:12:33.886192+00:00"
+    }
+  ]
+}

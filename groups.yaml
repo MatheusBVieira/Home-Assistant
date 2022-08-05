@@ -1,0 +1,3 @@
+todas_as_luzes:
+  - light.led_armario
+  - light.led_mesa

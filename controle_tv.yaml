@@ -1,0 +1,98 @@
+ligar_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: ligar
+  mode: single
+  icon: mdi:power
+
+abaixar_vol_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: vol_baixo
+  mode: single
+  icon: mdi:volume-minus
+
+aumentar_vol_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: vol_cima
+  mode: single
+  icon: mdi:volume-plus
+
+seta_esq_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: seta_esqueda
+  mode: single
+  icon: mdi:arrow-left
+
+seta_dir_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: seta_direita
+  mode: single
+  icon: mdi:arrow-right
+
+seta_cima_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: seta_cima
+  mode: single
+  icon: mdi:arrow-up
+
+seta_baixo_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: seta_baixo
+  mode: single
+  icon: mdi:arrow-down
+
+ok_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: ok
+  mode: single
+  icon: mdi:hand-okay
+
+input_tv:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.rm3_remote
+    data:
+      device: TV
+      command: input
+  mode: single
+  icon: mdi:circle

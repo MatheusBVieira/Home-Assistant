@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "config_entries": [
+          "ed85209b354f7e4fc0f19e24f822d937"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "04208b7a24aef4e4"
+          ]
+        ],
+        "manufacturer": "samsung",
+        "model": "SM-N975F",
+        "name": "Telefone matheus",
+        "sw_version": "30",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "eaabb555ca7a50107bbf5f1a63347b3a",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "61eb9b040d466e22121d503770952ee8"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hacs",
+            "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+          ]
+        ],
+        "manufacturer": "hacs.xyz",
+        "model": "",
+        "name": "HACS",
+        "sw_version": "1.26.2",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "bec4e42ba5403755618361bdb87b7fb8",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hacs"
+      },
+      {
+        "config_entries": [
+          "eb7c9ffc971f9e4bcc32cd87f8758013"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name": "Forecast",
+        "sw_version": null,
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "36ee321bc20be210d91ed1387003d02d",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "https://www.met.no/en"
+      },
+      {
+        "config_entries": [
+          "34427febbcf7c8c09c442b7e636013d6"
+        ],
+        "connections": [
+          [
+            "mac",
+            "c8:f7:42:40:9d:c7"
+          ]
+        ],
+        "identifiers": [
+          [
+            "broadlink",
+            "c8f742409dc7"
+          ]
+        ],
+        "manufacturer": "Broadlink",
+        "model": "RM mini 3",
+        "name": "rm3",
+        "sw_version": 44057,
+        "hw_version": null,
+        "entry_type": null,
+        "id": "cb6b3803db34488f56f93ea9fcb7a0b7",
+        "via_device_id": null,
+        "area_id": "quarto",
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "ec6e20a3a3dcba7c8ee1f246e14ddb0c"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "mobile_app",
+            "41aa3398b2db2df9"
+          ]
+        ],
+        "manufacturer": "samsung",
+        "model": "SM-G975F",
+        "name": "Telefone da nathalia",
+        "sw_version": "30",
+        "hw_version": null,
+        "entry_type": null,
+        "id": "c3d5776adbb33ba96e3ad5195b6a014f",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "71839ffffab7f56b5dd06b02d8da04c5"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_ssh"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name": "SSH & Web Terminal",
+        "sw_version": "12.0.0",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "5bf6bc423571b968988a8d2c594e9a13",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_ssh"
+      },
+      {
+        "config_entries": [
+          "71839ffffab7f56b5dd06b02d8da04c5"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Core",
+        "name": "Home Assistant Core",
+        "sw_version": "2022.8.1",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "2c53f2b4b34e89c276095e2e1182af29",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "71839ffffab7f56b5dd06b02d8da04c5"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "supervisor"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Supervisor",
+        "name": "Home Assistant Supervisor",
+        "sw_version": "2022.07.0",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "bf8ba35b0cd8ebcf1b0a0233975ed052",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "71839ffffab7f56b5dd06b02d8da04c5"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "OS"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Operating System",
+        "name": "Home Assistant Operating System",
+        "sw_version": "8.4",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "58062a6ec048b5d77725888522253207",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "71839ffffab7f56b5dd06b02d8da04c5"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_vscode"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name": "Studio Code Server",
+        "sw_version": "5.2.0",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "fc3909e5b549d0522fe14cb9af8ab517",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_vscode"
+      },
+      {
+        "config_entries": [
+          "71839ffffab7f56b5dd06b02d8da04c5"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_nodered"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name": "Node-RED",
+        "sw_version": "13.3.1",
+        "hw_version": null,
+        "entry_type": "service",
+        "id": "cbfe671ff584e37c543d5b180598132a",
+        "via_device_id": null,
+        "area_id": null,
+        "name_by_user": null,
+        "disabled_by": null,
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_nodered"
+      },
+      {
+        "config_entries": [
+          "7a23307dd7e75b2dd1101260fee8d580"
+        ],
+        "connections": [
+          [
+            "mac",
+            "b4:e8:42:99:64:bc"
+          ]
+        ],
+        "identifiers": [
+          [
+            "flux_led",
+            "7a23307dd7e75b2dd1101260fee8d580"
+          ]
+        ],
+        "manufacturer": "Zengge",
+        "model": "Controller RGB (0x33)",
+        "name": "Controller RGB 9964BC",
+        "sw_version": "10.48",
+        "hw_version": "AK001-ZJ2146",
+        "entry_type": null,
+        "id": "57c1fe12bb319872743fa6cba57b9a1d",
+        "via_device_id": null,
+        "area_id": "quarto",
+        "name_by_user": "Led Mesa",
+        "disabled_by": null,
+        "configuration_url": null
+      },
+      {
+        "config_entries": [
+          "139e6d185b873fb1283548b82d101ef6"
+        ],
+        "connections": [
+          [
+            "mac",
+            "b4:e8:42:9a:2e:82"
+          ]
+        ],
+        "identifiers": [
+          [
+            "flux_led",
+            "139e6d185b873fb1283548b82d101ef6"
+          ]
+        ],
+        "manufacturer": "Zengge",
+        "model": "Controller RGB (0x33)",
+        "name": "Controller RGB 9A2E82",
+        "sw_version": "10.48",
+        "hw_version": "AK001-ZJ2146",
+        "entry_type": null,
+        "id": "26edb91149d78fe6542df00c21204e09",
+        "via_device_id": null,
+        "area_id": "quarto",
+        "name_by_user": "Led Armario",
+        "disabled_by": null,
+        "configuration_url": null
+      }
+    ],
+    "deleted_devices": []
+  }
+}

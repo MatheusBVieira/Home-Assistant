@@ -1,0 +1,41 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+light:
+  - platform: flux_led
+    devices:
+      192.168.0.19:
+        name: led_armario
+  - platform: flux_led
+    devices:
+      192.168.0.26:
+        name: led_mesa
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+climate:
+  - platform: smartir
+    name: Ar condicionado
+    unique_id: ar_condicionado
+    device_code: 1241
+    controller_data: remote.rm3_remote
+    #temperature_sensor: sensor.temperature
+    #humidity_sensor: sensor.humidity
+    #power_sensor: binary_sensor.ac_power
+
+smartir:
+  update_branch: rc
+
+device_tracker:
+  - platform: ping
+    hosts: 
+      telefone_matheus: 192.168.0.87
+    

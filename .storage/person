@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "Matheus",
+                "user_id": "ea8543830b7c4ac5a11efd3a2cc04d13",
+                "device_trackers": [
+                    "device_tracker.telefone_matheus"
+                ],
+                "id": "matheus"
+            }
+        ]
+    }
+}
