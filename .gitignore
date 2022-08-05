@@ -18,13 +18,17 @@
 !.gitignore
 !*.md
 !.gitkeep
+!.storage/hacs/
+
 
 # Ignore folders.
 .cloud
 .google.token
+.storage/
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
 secrets.yaml
 known_devices.yaml
 home-assistant_v2.db-shm
+
