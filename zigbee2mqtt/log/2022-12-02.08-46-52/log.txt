@@ -1,0 +1,13 @@
+info  2022-12-02 08:46:52: Logging to console and directory: '/config/zigbee2mqtt/log/2022-12-02.08-46-52' filename: log.txt
+info  2022-12-02 08:46:52: Starting Zigbee2MQTT version 1.28.4 (commit #unknown)
+info  2022-12-02 08:46:52: Starting zigbee-herdsman (0.14.76)
+info  2022-12-02 08:46:55: zigbee-herdsman started (resumed)
+info  2022-12-02 08:46:55: Coordinator firmware version: '{"meta":{"maintrel":"3 ","majorrel":"6","minorrel":"10","product":8,"revision":"6.10.3.0 build 297"},"type":"EZSP v8"}'
+info  2022-12-02 08:46:55: Currently 0 devices are joined:
+info  2022-12-02 08:46:55: Zigbee: disabling joining new devices.
+info  2022-12-02 08:46:55: Connecting to MQTT server at mqtt://core-mosquitto:1883
+info  2022-12-02 08:46:56: Connected to MQTT server
+info  2022-12-02 08:46:56: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2022-12-02 08:46:56: Started frontend on port 0.0.0.0:8099
+info  2022-12-02 08:46:56: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2022-12-02 08:46:56: Zigbee2MQTT started!

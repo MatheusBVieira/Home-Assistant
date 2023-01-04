@@ -1,0 +1,32 @@
+homeassistant: true
+mqtt:
+  server: mqtt://core-mosquitto:1883
+  user: mqtt_user
+  password: mqtt_pass
+serial:
+  port: >-
+    /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20220714082513-if00
+  adapter: ezsp
+frontend:
+  port: 8099
+advanced:
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+device_options:
+  legacy: false
+devices:
+  '0x000d6f00179b3a1a':
+    friendly_name: '0x000d6f00179b3a1a'
+  '0xa4c1381071c2e6a9':
+    friendly_name: Interruptor Entrada
+  '0x84b4dbfffee32c24':
+    friendly_name: Interruptor Sala
+  '0x84b4dbfffeddc797':
+    friendly_name: Interruptor Corredor
+  '0x84b4dbfffeddc1db':
+    friendly_name: Interruptor Escritorio
+  '0x84b4dbfffee32d7a':
+    friendly_name: Interruptor Quarto
+  '0x943469fffe80215b':
+    friendly_name: Interruptor Cozinha

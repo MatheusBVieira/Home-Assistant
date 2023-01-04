@@ -1,17 +1,69 @@
-2022-08-05 17:57:06.716 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-08-05 17:57:06.719 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration smartir which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-08-05 17:57:17.434 ERROR (MainThread) [homeassistant.components.device_tracker] The see service is not supported for this entity device_tracker.telefone_matheus
-2022-08-05 17:57:21.467 ERROR (MainThread) [homeassistant.components.light] The flux_led platform for the light integration does not support platform setup. Please remove it from your config.
-2022-08-05 17:57:21.471 ERROR (MainThread) [homeassistant.components.light] The flux_led platform for the light integration does not support platform setup. Please remove it from your config.
-2022-08-05 17:57:23.845 ERROR (MainThread) [frontend.js.latest.202208020] http://192.168.0.197:8123/hacsfiles/button-card/button-card.js?hacstag=146194325342:1:30589 Uncaught TypeError: Cannot read properties of undefined (reading 'state')
-2022-08-05 17:57:24.089 ERROR (MainThread) [frontend.js.latest.202208020] http://192.168.0.197:8123/hacsfiles/button-card/button-card.js?hacstag=146194325342:1:30589 Uncaught TypeError: Cannot read properties of undefined (reading 'state')
-2022-08-05 17:57:33.275 ERROR (MainThread) [homeassistant.components.device_tracker] The see service is not supported for this entity device_tracker.telefone_matheus
-2022-08-05 17:57:48.795 ERROR (MainThread) [homeassistant.components.device_tracker] The see service is not supported for this entity device_tracker.telefone_matheus
-2022-08-05 17:57:51.132 ERROR (MainThread) [frontend.js.latest.202208020] http://192.168.0.197:8123/hacsfiles/button-card/button-card.js?hacstag=146194325342:1:30589 Uncaught TypeError: Cannot read properties of undefined (reading 'state')
-2022-08-05 17:57:51.949 ERROR (MainThread) [frontend.js.latest.202208020] http://192.168.0.197:8123/hacsfiles/button-card/button-card.js?hacstag=146194325342:1:30589 Uncaught TypeError: Cannot read properties of undefined (reading 'state')
-2022-08-05 17:58:03.907 ERROR (MainThread) [homeassistant.components.device_tracker] The see service is not supported for this entity device_tracker.telefone_matheus
-2022-08-05 17:58:19.590 ERROR (MainThread) [homeassistant.components.device_tracker] The see service is not supported for this entity device_tracker.telefone_matheus
-2022-08-05 17:58:34.437 ERROR (MainThread) [homeassistant.components.device_tracker] The see service is not supported for this entity device_tracker.telefone_matheus
-2022-08-05 17:58:50.355 ERROR (MainThread) [homeassistant.components.device_tracker] The see service is not supported for this entity device_tracker.telefone_matheus
-2022-08-05 17:59:04.743 ERROR (MainThread) [homeassistant.components.device_tracker] The see service is not supported for this entity device_tracker.telefone_matheus
-2022-08-05 17:59:06.533 ERROR (MainThread) [homeassistant.components.hassio.handler] Client error on /homeassistant/restart request Server disconnected
+2023-01-04 01:39:12.326 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-01-04 01:39:12.330 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-01-04 01:39:12.332 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration smartir which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-01-04 01:39:12.334 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration ui_lovelace_minimalist which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-01-04 01:39:34.544 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [547472535376] Error handling message: Unknown error (unknown_error) from 192.168.0.125 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/browser_mod/connection.py", line 143, in handle_update
+    dev = getBrowser(hass, browserID)
+  File "/config/custom_components/browser_mod/browser.py", line 198, in getBrowser
+    browsers[browserID] = BrowserModBrowser(hass, browserID)
+  File "/config/custom_components/browser_mod/browser.py", line 42, in __init__
+    self.update_entities(hass)
+  File "/config/custom_components/browser_mod/browser.py", line 114, in update_entities
+    adder = hass.data[DOMAIN][DATA_ADDERS]["light"]
+KeyError: 'light'
+2023-01-04 01:39:34.666 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [547472535376] Error handling message: Unknown error (unknown_error) from 192.168.0.125 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/browser_mod/connection.py", line 143, in handle_update
+    dev = getBrowser(hass, browserID)
+  File "/config/custom_components/browser_mod/browser.py", line 198, in getBrowser
+    browsers[browserID] = BrowserModBrowser(hass, browserID)
+  File "/config/custom_components/browser_mod/browser.py", line 42, in __init__
+    self.update_entities(hass)
+  File "/config/custom_components/browser_mod/browser.py", line 114, in update_entities
+    adder = hass.data[DOMAIN][DATA_ADDERS]["light"]
+KeyError: 'light'
+2023-01-04 01:39:34.678 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_path already exists - ignoring sensor.f41c4bc3_9059c033_browser_path
+2023-01-04 01:39:34.715 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_visibility already exists - ignoring sensor.f41c4bc3_9059c033_browser_visibility
+2023-01-04 01:39:34.727 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_userAgent already exists - ignoring sensor.f41c4bc3_9059c033_browser_useragent
+2023-01-04 01:39:34.732 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_user already exists - ignoring sensor.f41c4bc3_9059c033_browser_user
+2023-01-04 01:39:34.740 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_FullyKiosk already exists - ignoring binary_sensor.f41c4bc3_9059c033_browser_fullykiosk
+2023-01-04 01:39:34.743 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_width already exists - ignoring sensor.f41c4bc3_9059c033_browser_width
+2023-01-04 01:39:34.746 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_height already exists - ignoring sensor.f41c4bc3_9059c033_browser_height
+2023-01-04 01:39:34.750 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_dark_mode already exists - ignoring binary_sensor.f41c4bc3_9059c033_browser_dark_mode
+2023-01-04 01:39:34.752 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-activity already exists - ignoring binary_sensor.f41c4bc3_9059c033
+2023-01-04 01:39:35.500 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [547469919040] Error handling message: Unknown error (unknown_error) from 192.168.0.125 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/config/custom_components/browser_mod/connection.py", line 61, in handle_connect
+    dev = getBrowser(hass, browserID)
+  File "/config/custom_components/browser_mod/browser.py", line 198, in getBrowser
+    browsers[browserID] = BrowserModBrowser(hass, browserID)
+  File "/config/custom_components/browser_mod/browser.py", line 42, in __init__
+    self.update_entities(hass)
+  File "/config/custom_components/browser_mod/browser.py", line 114, in update_entities
+    adder = hass.data[DOMAIN][DATA_ADDERS]["light"]
+KeyError: 'light'
+2023-01-04 01:39:35.507 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_path already exists - ignoring sensor.f41c4bc3_9059c033_browser_path
+2023-01-04 01:39:35.510 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_visibility already exists - ignoring sensor.f41c4bc3_9059c033_browser_visibility
+2023-01-04 01:39:35.512 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_userAgent already exists - ignoring sensor.f41c4bc3_9059c033_browser_useragent
+2023-01-04 01:39:35.513 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_user already exists - ignoring sensor.f41c4bc3_9059c033_browser_user
+2023-01-04 01:39:35.521 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_FullyKiosk already exists - ignoring binary_sensor.f41c4bc3_9059c033_browser_fullykiosk
+2023-01-04 01:39:35.522 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_width already exists - ignoring sensor.f41c4bc3_9059c033_browser_width
+2023-01-04 01:39:35.527 ERROR (MainThread) [homeassistant.components.sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_height already exists - ignoring sensor.f41c4bc3_9059c033_browser_height
+2023-01-04 01:39:35.532 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-Browser_dark_mode already exists - ignoring binary_sensor.f41c4bc3_9059c033_browser_dark_mode
+2023-01-04 01:39:35.536 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform browser_mod does not generate unique IDs. ID f41c4bc3-9059c033-activity already exists - ignoring binary_sensor.f41c4bc3_9059c033
+2023-01-04 01:39:51.991 ERROR (MainThread) [custom_components.ui_lovelace_minimalist.base] HACS Frontend repo "lovelace-layout-card" is not installed, See Integration Configuration.
+2023-01-04 01:39:51.999 ERROR (MainThread) [custom_components.ui_lovelace_minimalist.base] HACS Frontend repo "lovelace-state-switch" is not installed, See Integration Configuration.
+2023-01-04 01:39:52.001 ERROR (MainThread) [custom_components.ui_lovelace_minimalist.base] HACS Frontend repo "weather-radar-card" is not installed, See Integration Configuration.
+2023-01-04 01:40:32.088 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: smartir
+2023-01-04 01:40:41.895 ERROR (MainThread) [homeassistant.components.device_tracker] Platform mobile_app does not generate unique IDs. ID 04208b7a24aef4e4 already exists - ignoring device_tracker.telefone_matheus
+2023-01-04 01:40:47.116 ERROR (MainThread) [homeassistant.components.light] The flux_led platform for the light integration does not support platform setup. Please remove it from your config.
+2023-01-04 01:40:47.119 ERROR (MainThread) [homeassistant.components.light] The flux_led platform for the light integration does not support platform setup. Please remove it from your config.
+2023-01-04 01:57:49.530 ERROR (MainThread) [homeassistant.components.hassio.handler] Client error on /homeassistant/restart request Server disconnected
