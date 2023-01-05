@@ -1,0 +1,85 @@
+title: "Home"
+path: "home"
+cards:
+  - type: "custom:button-card"
+    template: "card_esh_welcome"
+    triggers_update: "input_boolean.minimalist_dropdown"
+    variables:
+      ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
+      ulm_weather: "weather.casa"
+      entity_1:
+        nav: "house"
+        icon: "mdi:home"
+        name: "House"
+        color: "blue"
+      entity_2:
+        nav: "lights"
+        icon: "mdi:lightbulb"
+        name: "Lights"
+        color: "yellow"
+      entity_3:
+        nav: "security"
+        icon: "mdi:shield"
+        name: Secure
+        color: "green"
+      entity_4:
+        nav: "network"
+        icon: "mdi:nas"
+        name: Lab
+        color: "purple"
+      entity_5:
+        nav: "network"
+        icon: "mdi:flask"
+        name: Lab
+        color: "red"
+
+  - type: horizontal-stack
+    cards:
+      - type: "custom:button-card"
+        template: card_person
+        variables:
+          ulm_card_person_entity: person.matheus
+          ulm_card_person_use_entity_picture: true
+          ulm_card_person_zone1: zone.work
+          ulm_card_person_zone2: zone.school
+      - type: "custom:button-card"
+        template: card_person
+        variables:
+          ulm_card_person_entity: person.nathalia
+          ulm_card_person_use_entity_picture: true
+          ulm_card_person_zone1: zone.work
+          ulm_card_person_zone2: zone.school
+
+  - type: "custom:button-card"
+    template: card_title
+    name: Áreas
+
+  - type: horizontal-stack
+    cards:
+      - type: "custom:button-card"
+        template:
+          - card_esh_room
+          - yellow_on
+        name: Entrada
+        entity: light.led_armario
+        icon: mdi:door
+        tap_action:
+          action: navigate
+          navigation_path: "entrada"
+        variables:
+          ulm_custom_card_esh_room_light_entity: light.led_armario
+          ulm_custom_card_esh_room_climate_entity: climate.ar_condicionado
+        label: 🌡️ 23 °C #'[[[ return states["sensor.openweathermap_temperature"].state + "°C" ]]]'
+      - type: "custom:button-card"
+        template:
+          - card_esh_room
+          - yellow_on
+        name: Cozinha
+        entity: light.led_armario
+        icon: mdi:knife
+        tap_action:
+          action: navigate
+          navigation_path: "cozinha"
+        variables:
+          ulm_custom_card_esh_room_light_entity: light.led_armario
+        label: 🌡️ 23 °C #'[[[ return states["sensor.openweathermap_temperature"].state + "°C" ]]]'
