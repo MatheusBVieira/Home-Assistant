@@ -1,0 +1,54 @@
+title: "Quarto"
+path: "quarto"
+cards:
+  - type: "custom:button-card"
+    template: chip_back
+    variables:
+      ulm_chip_back_path: home
+
+  - type: "custom:button-card"
+    template: card_title
+    name: Quarto
+
+  - type: horizontal-stack
+    cards:
+      - type: "custom:button-card"
+        template: card_graph
+        entity: sensor.telefone_matheus_battery_level
+        variables:
+          ulm_card_graph_color: "var(--google-blue)"
+          ulm_card_graph_name: Temperature Livingroom
+          ulm_card_graph_entity: sensor.telefone_matheus_battery_level
+          ulm_card_graph_type: fill
+          ulm_card_graph_hours: 24
+          ulm_card_graph_group_by: interval
+
+      - type: "custom:button-card"
+        template: card_graph
+        entity: sensor.telefone_matheus_battery_level
+        variables:
+          ulm_card_graph_color: "var(--google-red)"
+          ulm_card_graph_name: Humidity
+          ulm_card_graph_entity: sensor.telefone_matheus_battery_level
+          ulm_card_graph_type: fill
+          ulm_card_graph_hours: 24
+  
+  - type: "custom:button-card"
+    template: card_title
+    label: "Dispositivos"
+
+  - type: horizontal-stack
+    cards:
+      - type: "custom:button-card"
+        template: card_light
+        entity: light.luz_quarto
+        variables:
+          ulm_card_light_enable_color: true
+          ulm_card_light_force_background_color: true
+
+      - type: "custom:button-card"
+        template: card_light
+        entity: light.luz_closet
+        variables:
+          ulm_card_light_enable_color: true
+          ulm_card_light_force_background_color: true

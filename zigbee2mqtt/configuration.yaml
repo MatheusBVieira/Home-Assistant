@@ -17,7 +17,7 @@ device_options:
   legacy: false
 devices:
   '0x000d6f00179b3a1a':
-    friendly_name: '0x000d6f00179b3a1a'
+    friendly_name: Fechadura Entrada
   '0xa4c1381071c2e6a9':
     friendly_name: Interruptor Entrada
   '0x84b4dbfffee32c24':

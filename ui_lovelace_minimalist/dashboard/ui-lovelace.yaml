@@ -6,3 +6,5 @@ background: "var(--background-image)"
 views:
   - !include views/home.yaml
   - !include views/cozinha.yaml
+  - !include views/quarto.yaml
+  - !include views/seguranca.yaml
