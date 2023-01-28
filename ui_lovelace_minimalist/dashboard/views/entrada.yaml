@@ -1,5 +1,5 @@
-title: "Cozinha"
-path: "cozinha"
+title: "Entrada"
+path: "entrada"
 cards:
   - type: "custom:button-card"
     template: chip_back
@@ -8,7 +8,7 @@ cards:
 
   - type: "custom:button-card"
     template: card_title
-    name: Cozinha
+    name: Entrada
 
   - type: horizontal-stack
     cards:
@@ -41,36 +41,14 @@ cards:
     cards:
       - type: "custom:button-card"
         template: card_light
-        entity: light.led_armario
+        entity: light.luz_entrada
         variables:
           ulm_card_light_enable_color: true
           ulm_card_light_force_background_color: true
 
       - type: "custom:button-card"
         template: card_light
-        entity: light.led_mesa
+        entity: light.luz_rua
         variables:
           ulm_card_light_enable_color: true
           ulm_card_light_force_background_color: true
-
-  - type: "custom:button-card"
-    template: card_title
-    label: "Sensors"
-
-  - type: horizontal-stack
-    cards:
-      - type: "custom:button-card"
-        template: card_binary_sensor
-        variables:
-          - ulm_show_last_changed: false
-        entity: binary_sensor.telefone_matheus_is_charging
-
-      - type: "custom:button-card"
-        template: card_battery
-        entity: sensor.telefone_matheus_battery_level
-        variables:
-          ulm_card_battery_battery_level_danger: 20
-          ulm_card_battery_battery_level_warning: 50
-        name: TRV
-
-
