@@ -36,12 +36,13 @@ cards:
   - type: horizontal-stack
     cards:
       - type: "custom:button-card"
-        template: card_person
+        template: custom_card_imswel_person
         variables:
-          ulm_card_person_entity: person.matheus
-          ulm_card_person_use_entity_picture: true
-          ulm_card_person_zone1: zone.work
-          ulm_card_person_zone2: zone.school
+          ulm_card_imswel_person_entity: person.matheus
+          ulm_card_imswel_person_wifi_tracker: device_tracker.wifi_oneplus_6t
+          ulm_card_imswel_person_gps_tracker: device_tracker.oneplus_6t
+          ulm_card_imswel_person_findmy_script: script.find_my_oneplus_6t
+          ulm_card_imswel_person_use_entity_picture: true
       - type: "custom:button-card"
         template: card_person
         variables:
@@ -82,7 +83,7 @@ cards:
         variables:
           ulm_custom_card_esh_room_light_entity: light.luz_cozinha
         label: 🌡️ 23 °C #'[[[ return states["sensor.openweathermap_temperature"].state + "°C" ]]]'
-        
+
   - type: horizontal-stack
     cards:
       - type: "custom:button-card"
@@ -103,15 +104,15 @@ cards:
           - card_esh_room
           - yellow_on
         name: Banheiro Visita
-        entity: light.led_armario
+        entity: light.luz_banheiro_visita
         icon: mdi:paper-roll
         tap_action:
           action: navigate
           navigation_path: "banheiro-visita"
         variables:
-          ulm_custom_card_esh_room_light_entity: light.led_armario
+          ulm_custom_card_esh_room_light_entity: light.luz_banheiro_visita
         label: 🌡️ 23 °C #'[[[ return states["sensor.openweathermap_temperature"].state + "°C" ]]]'
-  
+
   - type: horizontal-stack
     cards:
       - type: "custom:button-card"
@@ -141,7 +142,7 @@ cards:
         variables:
           ulm_custom_card_esh_room_light_entity: light.luz_corredor
         label: 🌡️ 23 °C #'[[[ return states["sensor.openweathermap_temperature"].state + "°C" ]]]'
-  
+
   - type: horizontal-stack
     cards:
       - type: "custom:button-card"
@@ -163,11 +164,11 @@ cards:
           - card_esh_room
           - yellow_on
         name: Banheiro Suite
-        entity: light.led_armario
+        entity: light.luz_banheiro_suite
         icon: mdi:paper-roll
         tap_action:
           action: navigate
           navigation_path: "banheiro-suite"
         variables:
-          ulm_custom_card_esh_room_light_entity: light.led_armario
+          ulm_custom_card_esh_room_light_entity: light.luz_banheiro_suite
         label: 🌡️ 23 °C #'[[[ return states["sensor.openweathermap_temperature"].state + "°C" ]]]'

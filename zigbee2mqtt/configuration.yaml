@@ -30,3 +30,7 @@ devices:
     friendly_name: Interruptor Quarto
   '0x943469fffe80215b':
     friendly_name: Interruptor Cozinha
+  '0xa4c1384856a91d93':
+    friendly_name: Interruptor Banheiro Suite
+  '0xa4c13854f5fd4199':
+    friendly_name: Interruptor Banheiro Visita

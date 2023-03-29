@@ -30,14 +30,13 @@ light:
   - platform: switch
     name: "Luz Sala"
     entity_id: switch.interruptor_sala_left
-  - platform: flux_led
-    devices:
-      192.168.0.19:
-        name: led_armario
-  - platform: flux_led
-    devices:
-      192.168.0.26:
-        name: led_mesa
+  - platform: switch
+    name: "Luz Banheiro Suite"
+    entity_id: switch.interruptor_banheiro_suite_left
+  - platform: switch
+    name: "Luz Banheiro Visita"
+    entity_id: switch.interruptor_banheiro_visita_left
+
 
 group: !include groups.yaml
 automation: !include automations.yaml
