@@ -5,67 +5,17 @@ default_config:
 tts:
   - platform: google_translate
 
-light: 
-  - platform: switch
-    name: "Luz Escritorio"
-    entity_id: switch.interruptor_escritorio_l1
-  - platform: switch
-    name: "Luz Corredor"
-    entity_id: switch.interruptor_corredor_left
-  - platform: switch
-    name: "Luz Quarto"
-    entity_id: switch.interruptor_quarto_left
-  - platform: switch
-    name: "Luz Closet"
-    entity_id: switch.interruptor_quarto_center
-  - platform: switch
-    name: "Luz Entrada"
-    entity_id: switch.interruptor_entrada_l1
-  - platform: switch
-    name: "Luz Rua"
-    entity_id: switch.interruptor_entrada_l4
-  - platform: switch
-    name: "Luz Cozinha"
-    entity_id: switch.interruptor_cozinha_l1
-  - platform: switch
-    name: "Luz Sala"
-    entity_id: switch.interruptor_sala_left
-  - platform: switch
-    name: "Luz Banheiro Suite"
-    entity_id: switch.interruptor_banheiro_suite_left
-  - platform: switch
-    name: "Luz Banheiro Visita"
-    entity_id: switch.interruptor_banheiro_visita_left
-
-
+light: !include lights.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+sensor: !include sensors.yaml
+climate: !include climates.yaml
 frontend:
   themes: !include_dir_merge_named themes
 
-climate:
-  - platform: smartir
-    name: Ar condicionado
-    unique_id: ar_condicionado
-    device_code: 3001
-    controller_data: remote.rm3_remote_quarto
-    #temperature_sensor: sensor.temperature
-    #humidity_sensor: sensor.humidity
-    #power_sensor: binary_sensor.ac_power
 
 smartir:
   update_branch: rc
 
-sensor:
-  - platform: template
-    sensors:
-      luzes_acesas:
-        value_template: >
-          {% set lights = [
-          states.light.led_armario,
-          states.light.led_mesa,
-          states.switch.interruptor_cozinha_l1
-                    ] %}
-          {{ lights | selectattr('state','eq','on') | list | count }}

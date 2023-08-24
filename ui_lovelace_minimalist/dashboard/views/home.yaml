@@ -13,7 +13,7 @@ cards:
         name: "House"
         color: "blue"
       entity_2:
-        nav: "lights"
+        nav: "luzes"
         icon: "mdi:lightbulb"
         name: "Lights"
         color: "yellow"

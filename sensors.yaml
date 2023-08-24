@@ -1,0 +1,18 @@
+- platform: template
+  sensors:
+    luzes_acesas:
+      value_template: >
+        {% set lights = [
+        states.light.luz_quarto,
+        states.light.luz_closet,
+        states.light.luz_cozinha,
+        states.light.luz_entrada,
+        states.light.luz_churrasqueira,
+        states.light.luz_rua,
+        states.light.luz_sala,
+        states.light.luz_banheiro_visita,
+        states.light.luz_escritorio,
+        states.light.luz_corredor,
+        states.light.luz_banheiro_suite
+                  ] %}
+        {{ lights | selectattr('state','eq','on') | list | count }}

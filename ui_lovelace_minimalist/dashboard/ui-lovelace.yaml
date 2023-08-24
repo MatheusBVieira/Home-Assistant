@@ -9,3 +9,4 @@ views:
   - !include views/quarto.yaml
   - !include views/seguranca.yaml
   - !include views/entrada.yaml
+  - !include views/luzes.yaml
